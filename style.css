@@ -164,6 +164,10 @@ footer {
   gap: 5px;
 }
 
+.menu-pdf {
+  text-align: center;
+}
+
 .burger div {
   width: 25px;
   height: 3px;
@@ -373,6 +377,12 @@ h1, h2, h3 {
   text-decoration: none;
 }
 
+.menu-pdf h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--fonce1);
+}
+
 /* Avis clients */
 .avis-liste {
   display: flex;
@@ -395,6 +405,14 @@ h1, h2, h3 {
 }
 
 /* Engagements */
+
+
+.engagements h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--fonce1);
+}
+
 .liste-engagements {
   display: flex;
   justify-content: space-around;
@@ -433,6 +451,12 @@ h1, h2, h3 {
   }
 }
 
+.avis h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--fonce1);
+}
+
 .avis-liste {
   display: flex;
   flex-direction: column;
@@ -452,6 +476,7 @@ h1, h2, h3 {
   font-size: 1.1em;
   color: var(--fonce3);
 }
+
 
 .carte-avis p {
   margin: 0.5em 0;
@@ -595,6 +620,7 @@ h1, h2, h3 {
   flex-direction: row-reverse;
 }
 
+
 .story-block .text {
   flex: 1;
   min-width: 280px;
@@ -618,7 +644,130 @@ h1, h2, h3 {
 }
 
 .story-block .image img {
-  width: 100%;
+  width: 55%;
+  /* ↘️ légèrement réduit */
+  max-width: 500px;
+  /* ⛔ évite les trop grandes images */
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: auto;
+}
+
+
+@media (max-width: 768px) {
+  .story-block, .story-block.reverse {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .story-block .image,
+  .story-block .text {
+    width: 100%;
+  }
+}
+
+/* === SECTIONS PRINCIPALES (Ambiance artisanale chaleureuse) === */
+
+section.bienvenue,
+section.contact-horaires {
+  max-width: 1000px;
+  margin: 5rem auto;
+  padding: 3rem 2rem;
+  background: #fff7f1;
+  /* beige très clair, chaleureux */
+  border-left: 6px solid #c98b55;
+  /* touche artisanale */
+  border-radius: 0.75rem;
+  font-family: 'Georgia', serif;
+  color: #4a2e1f;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+section.bienvenue:hover,
+section.contact-horaires:hover {
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+}
+
+/* Titres */
+section.bienvenue h2,
+section.contact-horaires h2 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #8c4f26;
+  /* brun doux */
+  font-family: 'Playfair Display', serif;
+}
+
+/* Paragraphes */
+section.bienvenue p,
+section.contact-horaires p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 1.2rem;
+}
+
+/* Textes en gras */
+section strong {
+  color: #a75e30;
+  font-weight: 600;
+}
+
+/* Lien téléphone */
+section.contact-horaires a {
+  color: #a75e30;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+section.contact-horaires a:hover {
+  text-decoration: underline;
+}
+
+/* Apparition douce */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile friendly */
+@media (max-width: 768px) {
+
+  section.bienvenue,
+  section.contact-horaires {
+    padding: 2rem 1.2rem;
+  }
+
+  section.bienvenue h2,
+  section.contact-horaires h2 {
+    font-size: 1.7rem;
+  }
+
+  section.bienvenue p,
+  section.contact-horaires p {
+    font-size: 1rem;
+  }
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #a75e30;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.logo:hover {
+  opacity: 0.75;
 }
