@@ -9,35 +9,6 @@ body {
   color: #3a2d2d;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background-color: #fff8ed;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-}
-
-.navbar .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.navbar ul {
-  list-style: none;
-  display: flex;
-  gap: 2rem;
-}
-
-.navbar a {
-  text-decoration: none;
-  color: #3a2d2d;
-  transition: color 0.3s;
-}
-
-.navbar a:hover {
-  color: #a55c30;
-}
 
 .hero {
   padding: 6rem 2rem;
@@ -174,27 +145,7 @@ footer {
   background-color: #3a2d2d;
 }
 
-@media (max-width: 768px) {
-  .navbar nav ul {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    right: 2rem;
-    background: #fff8ed;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  }
 
-  .navbar nav ul.show {
-    display: flex;
-  }
-
-  .burger {
-    display: flex;
-  }
-}
 
 /* Slider */
 .slider {
@@ -253,18 +204,6 @@ body {
   color: var(--brown-dark);
 }
 
-.navbar {
-  background-color: var(--brown);
-  color: white;
-}
-
-.navbar a {
-  color: white;
-}
-
-.navbar a:hover {
-  color: var(--terracotta);
-}
 
 .hero {
   background-color: var(--terracotta);
@@ -772,28 +711,63 @@ section.contact-horaires a:hover {
   opacity: 0.75;
 }
 
-/* Masquer le menu sur mobile */
-@media (max-width: 768px) {
-  .navbar ul {
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background-color: var(--brown-soft);
+  flex-wrap: wrap;
+}
+
+.logo a {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #a75e30;
+  text-decoration: none;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  display: block;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #a75e30;
+  font-weight: 500;
+  padding: 0.5rem 0.75rem;
+  transition: color 0.2s ease;
+}
+
+.navbar ul li a:hover {
+  color: #a75e30;
+}
+
+/* Responsive : ne montrer que "À propos" et "Contact" */
+@media (max-width: 600px) {
+  .navbar ul li:first-child {
     display: none;
-    flex-direction: column;
-    background: #fff8ed;
-    position: absolute;
-    top: 70px;
-    right: 20px;
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
+    /* Masquer "Accueil" */
   }
 
-  .navbar ul.show {
-    display: flex;
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
   }
 
-  .burger {
-    display: block;
-    font-size: 2rem;
-    cursor: pointer;
+  .navbar ul {
+    gap: 1rem;
+  }
+
+  .navbar ul li a {
+    padding: 0.5rem;
   }
 }
