@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Mie d'Or</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">La Mie d'Or</div>
+      <div class="burger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Nos Produits</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero-fade">
+      <div
+        class="slide-layer active"
+        style="background-image: url('images/slider1.jpg')"
+      ></div>
+      <div
+        class="slide-layer"
+        style="background-image: url('images/slider2.jpg')"
+      ></div>
+      <div class="hero-text-overlay">
+        <h1>Un goût authentique,<br />un savoir-faire artisanal</h1>
+        <p>Des pains, viennoiseries et douceurs préparés avec passion.</p>
+      </div>
+    </section>
+
+    <section
+      class="fade-in"
+      style="padding: 4rem 2rem; max-width: 1000px; margin: auto"
+    >
+      <h2>Notre engagement</h2>
+      <p>
+        Chez La Mie d'Or, nous croyons à la qualité, à la tradition, et à
+        l'amour du bon pain. Chaque produit est façonné à la main avec des
+        ingrédients de qualité, sans compromis.
+      </p>
+      <p>
+        Nos pains sont réalisés avec du levain naturel, nos viennoiseries sont
+        pur beurre, et nos pâtisseries changent au fil des saisons. Venez
+        découvrir un univers de saveurs et de passion boulangère.
+      </p>
+    </section>
+
+    <section class="produits fade-in">
+      <h2>Nos produits</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="images/pain.png" alt="" />
+          <h3>Pain de campagne</h3>
+          <p>Levain naturel, cuit sur pierre.</p>
+        </div>
+        <div class="card">
+          <img src="images/baguette.png" alt="" />
+          <h3>Baguette tradition</h3>
+          <p>Croustillante, mie alvéolée.</p>
+        </div>
+        <div class="card">
+          <img src="images/croissant.png" alt="" />
+          <h3>Croissant pur beurre</h3>
+          <p>Feuilleté et doré à souhait.</p>
+        </div>
+        <div class="card">
+          <img src="images/complet.png" alt="" />
+          <h3>Pain complet bio</h3>
+          <p>Sain et riche en fibres.</p>
+        </div>
+        <div class="card">
+          <img src="images/tarte.png" alt="" />
+          <h3>Tartelette framboise</h3>
+          <p>Garniture fruitée et fraîche.</p>
+        </div>
+        <div class="card">
+          <img src="images/brioche.png" alt="" />
+          <h3>Brioche pralines</h3>
+          <p>Moelleuse et généreuse.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU PDF -->
+    <section class="menu-pdf fade-in">
+      <h2>Notre carte complète</h2>
+      <a href="menu.pdf" download class="btn-pdf">
+        <img src="images/pdf-icon.png" alt="Icône PDF" /> Télécharger le menu
+      </a>
+    </section>
+
+    <!-- AVIS CLIENTS -->
+    <section class="avis fade-in">
+      <h2>Ils parlent de nous</h2>
+      <div class="avis-liste">
+        <div class="carte-avis">
+          <h3>Marie L.</h3>
+          <p>"Le pain est exceptionnel et l’accueil chaleureux."</p>
+          <div class="etoiles">★★★★★</div>
+        </div>
+        <div class="carte-avis">
+          <h3>Thomas B.</h3>
+          <p>"Les croissants sont les meilleurs du quartier !"</p>
+          <div class="etoiles">★★★★☆</div>
+        </div>
+        <div class="carte-avis">
+          <h3>Sofia K.</h3>
+          <p>"Un vrai plaisir de venir chaque matin, tout est fait maison."</p>
+          <div class="etoiles">★★★★★</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NOS ENGAGEMENTS -->
+    <section class="engagements fade-in">
+      <h2>Nos engagements</h2>
+      <div class="liste-engagements">
+        <div>
+          <img src="images/maison.png" />
+          <p>Fait maison</p>
+        </div>
+        <div>
+          <img src="images/local.png" />
+          <p>Ingrédients locaux</p>
+        </div>
+        <div>
+          <img src="images/gaspillage.png" />
+          <p>Zéro gaspillage</p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>&copy; 2025 La Mie d'Or – Boulangerie artisanale</p>
+      <div class="reseaux">
+        <a
+          href="https://www.instagram.com/y.echz"
+          target="_blank"
+          aria-label="Instagram"
+        >
+          <img
+            src="images/instagram.png"
+            alt="Instagram"
+            style="width: 24px; margin: 0 10px"
+          />
+        </a>
+        <a href="https://www.youtube.com" target="_blank" aria-label="YouTube">
+          <img
+            src="images/youtube.png"
+            alt="YouTube"
+            style="width: 24px; margin: 0 10px"
+          />
+        </a>
+      </div>
+    </footer>
+
+    <!-- BOUTON RETOUR HAUT -->
+    <button id="scrollTopBtn" title="Remonter">↑</button>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">La Mie d'Or</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Nos Produits</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="contact">
+      <h1>Nous contacter</h1>
+      <div class="contact-info">
+        <p>📍 <strong>12 rue des Artisans, 69001 Lyon</strong></p>
+        <p>📞 <strong>04 78 12 34 56</strong></p>
+        <p>📧 <strong>contact@lamiedor.fr</strong></p>
+        <p>🕒 <strong>Du mardi au dimanche – 6h30 à 19h30</strong></p>
+        <p>🚫 <strong>Fermé le lundi</strong></p>
+      </div>
+
+      <h2>Formulaire de contact</h2>
+      <form>
+        <input type="text" placeholder="Votre nom" required />
+        <input type="email" placeholder="Votre email" required />
+        <textarea placeholder="Votre message" required></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+
+      <!-- HORAIRES (déplacé dans <main>) -->
+      <section class="horaires">
+        <h2>Nos horaires</h2>
+        <div class="bloc-horaires">
+          <div class="jour">
+            <h3>Mardi – Samedi</h3>
+            <p>6h30 – 19h30</p>
+          </div>
+          <div class="jour">
+            <h3>Dimanche</h3>
+            <p>6h30 – 13h00</p>
+          </div>
+          <div class="jour ferme">
+            <h3>Lundi</h3>
+            <p>Fermé</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 La Mie d'Or – Boulangerie artisanale</p>
+      <div class="reseaux">
+        <a
+          href="https://www.instagram.com/y.echz"
+          target="_blank"
+          aria-label="Instagram"
+        >
+          <img
+            src="images/instagram.png"
+            alt="Instagram"
+            style="width: 24px; margin: 0 10px"
+          />
+        </a>
+        <a href="https://www.youtube.com" target="_blank" aria-label="YouTube">
+          <img
+            src="images/youtube.png"
+            alt="YouTube"
+            style="width: 24px; margin: 0 10px"
+          />
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
